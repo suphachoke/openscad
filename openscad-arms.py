@@ -7,8 +7,8 @@ class MyPanel(wx.Panel):
         self.frame = parent
 
         self.cbox = wx.BoxSizer(wx.VERTICAL)
-        self.combo = wx.ComboBox(self,choices=['a','b','c'])
-        self.cbox.Add(wx.StaticText(self,label="เลือกชิ้นส่วนแขนเทียม:"),0,wx.EXPAND|wx.LEFT|wx.RIGHT|wx.TOP,10)
+        self.combo = wx.ComboBox(self,choices=['UnLimbited_Arm_v2.1','b','c'])
+        self.cbox.Add(wx.StaticText(self,label="เลือกแบบแขนเทียม:"),0,wx.EXPAND|wx.LEFT|wx.RIGHT|wx.TOP,10)
         self.cbox.Add(self.combo,0,wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL|wx.LEFT|wx.RIGHT|wx.BOTTOM,10)
 
         self.combo.Bind(wx.EVT_COMBOBOX,self.onPartSelected)
@@ -26,7 +26,10 @@ class MyPanel(wx.Panel):
             self.abox.Hide(0)
             self.abox.Remove(0)
             self.frame.mainbox.Layout()
-        if self.combo.GetValue()=="a":
+        if self.combo.GetValue()!="":
+            imageFile = "models/"+self.combo.GetValue()+".png"
+            img = wx.Image(imageFile,wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+            wx.StaticBitmap(self,-1,img,(10,110),(img.GetWidth(),img.GetHeight()))
             self.abox.Add(wx.StaticText(self,label="การตั้งค่า"),0,0,0)
             self.addAboxComponent()
             self.frame.mainbox.Layout()
