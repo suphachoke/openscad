@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>scad</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>SCAD.icns</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>text/plain</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>OpenSCAD Design</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSIsAppleDefaultForType</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>stl</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>STL 3D file</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>off</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>OFF 3D file</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>dxf</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>DXF file</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>OpenSCAD</string>
+	<key>CFBundleIconFile</key>
+	<string>OpenSCAD.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.openscad.OpenSCAD</string>
+	<key>CFBundleName</key>
+	<string>OpenSCAD</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2015.03-3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2016.02.23</string>
+	<key>LSEnvironment</key>
+	<dict>
+		<key>GUI_LAUNCHED</key>
+		<string></string>
+	</dict>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+	<key>NSExceptionDomains</key>
+	<dict>
+		<key>files.openscad.org</key>
+		<dict>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSExceptionRequiresForwardSecrecy</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>OSAScriptingDefinition</key>
+	<string>OpenSCAD.sdef</string>
+	<key>SUFeedURL</key>
+	<string>http://files.openscad.org/appcast.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+</dict>
+</plist>
